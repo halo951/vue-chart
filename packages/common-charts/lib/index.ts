@@ -1,7 +1,5 @@
 import { Chart, DEFAULT_OPTIONS } from './components/chart'
 
-import { createPieChart } from './charts/create-pie'
-
 /** 设置首次渲染休眠时间
  *
  * @description 针对移动端设备(尤其是android), 同一时间渲染过多的chart时, 会由于同一时间触发多个渲染导致卡顿, 所以默认情况下会给定一个用户无感知的休眠时间, 避免多次渲染造成的卡顿问题
@@ -27,4 +25,8 @@ const setRenderer = (rendererType: 'canvas' | 'svg') => {
     DEFAULT_OPTIONS.renderer = rendererType
 }
 
-export { Chart, setFirstRenderSleep, setClear, setRenderer, createPieChart }
+const createBar = (source: any, options: {}) => {}
+
+const createPie = () => {}
+
+export { Chart, setFirstRenderSleep, setClear, setRenderer, createPie }
