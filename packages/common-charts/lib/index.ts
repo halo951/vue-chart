@@ -25,8 +25,4 @@ const setRenderer = (rendererType: 'canvas' | 'svg') => {
     DEFAULT_OPTIONS.renderer = rendererType
 }
 
-const createBar = (source: any, options: {}) => {}
-
-const createPie = () => {}
-
-export { Chart, setFirstRenderSleep, setClear, setRenderer, createPie }
+export { Chart, setFirstRenderSleep, setClear, setRenderer }
