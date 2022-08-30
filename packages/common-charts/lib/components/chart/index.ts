@@ -1,4 +1,4 @@
-import { h, PropType, defineComponent, onMounted, onBeforeUnmount, ref, watch } from 'vue-demi'
+import { h, PropType, defineComponent, onMounted, onBeforeUnmount, ref, watch } from 'vue'
 import { ECharts, EChartsOption, init } from 'echarts'
 import { delay, qraf } from './utils'
 

@@ -1,4 +1,4 @@
-import { PropType } from 'vue-demi';
+import { PropType } from 'vue';
 import { ECharts, EChartsOption } from 'echarts';
 export interface IChartData {
     chart: ECharts | null;
@@ -24,7 +24,7 @@ export interface IDefaultOptions {
 }
 /** 默认参数 */
 export declare const DEFAULT_OPTIONS: IDefaultOptions;
-export declare const Chart: import("vue-demi").DefineComponent<{
+export declare const Chart: import("vue").DefineComponent<{
     /** 创建echarts图表参数 */
     options: {
         type: PropType<EChartsOption>;
@@ -56,8 +56,8 @@ export declare const Chart: import("vue-demi").DefineComponent<{
         default: () => "canvas" | "svg";
     };
 }, {
-    el: import("vue-demi").Ref<HTMLDivElement | undefined>;
-}, unknown, {}, {}, import("vue-demi").ComponentOptionsMixin, import("vue-demi").ComponentOptionsMixin, Record<string, any>, string, import("vue-demi").VNodeProps & import("vue-demi").AllowedComponentProps & import("vue-demi").ComponentCustomProps, Readonly<import("vue-demi").ExtractPropTypes<{
+    el: import("vue").Ref<HTMLDivElement | undefined>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     /** 创建echarts图表参数 */
     options: {
         type: PropType<EChartsOption>;

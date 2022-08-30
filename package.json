@@ -12,6 +12,7 @@
         "serve:vue3": "cd packages/example-vue3 && yarn serve"
     },
     "devDependencies": {
+        "typescript": "^4.8.2",
         "prettier": "^2.7.1"
     }
 }
