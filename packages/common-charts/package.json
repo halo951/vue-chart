@@ -1,11 +1,11 @@
 {
     "name": "common-charts",
-    "description": "vue 项目 echarts 通用图表配置集合",
+    "description": "适用于 vue2.x, 3.x 的 echart 图表工具, 内置了一些常用图表简化创建方法",
     "keywords": [
         "vue",
         "echart"
     ],
-    "version": "0.0.1-dev.2",
+    "version": "0.0.1-dev.3",
     "main": "dist/index.cjs.js",
     "module": "dist/index.es.js",
     "typings": "typings/index.d.ts",
