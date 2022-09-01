@@ -9,7 +9,8 @@
         "test": "cd packages/common-charts && yarn test",
         "format": "prettier -w ./*.ts",
         "serve:vue2": "cd packages/example-vue2 && yarn serve",
-        "serve:vue3": "cd packages/example-vue3 && yarn serve"
+        "serve:vue3": "cd packages/example-vue3 && yarn serve",
+        "release": "cd packages/common-charts && yarn publish"
     },
     "devDependencies": {
         "prettier": "^2.7.1",
