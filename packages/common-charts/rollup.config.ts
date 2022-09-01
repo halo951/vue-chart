@@ -12,28 +12,27 @@ const banner: string = `
  */`.trim()
 
 /** export rollup.config */
-export default async (): Promise<RollupOptions | Array<RollupOptions>> => {
-    const outType: Array<'cjs' | 'es'> = ['cjs']
-
-    return outType.map((format) => {
-        return {
-            treeshake: true,
-            strictDeprecations: false,
-            input: 'lib/index.ts',
-            plugins: [
-                typescript({ clean: true, useTsconfigDeclarationDir: true, abortOnError: true }),
-                // compress
-                terser(),
-                // total bundle size
-                totalSize()
-            ],
-            output: {
+export default (): RollupOptions => {
+    const outType: Array<'cjs' | 'es'> = ['cjs', 'es']
+    return {
+        treeshake: true,
+        strictDeprecations: false,
+        input: 'lib/index.ts',
+        plugins: [
+            typescript({ clean: true, useTsconfigDeclarationDir: true, abortOnError: true }),
+            // compress
+            terser(),
+            // total bundle size
+            totalSize()
+        ],
+        output: outType.map((format) => {
+            return {
                 exports: 'auto',
                 inlineDynamicImports: true,
                 banner,
                 format,
                 file: `dist/index.${format}.js`
             }
-        }
-    })
+        })
+    }
 }
