@@ -7,6 +7,5 @@ export interface IBarOptions extends IBaseOptions {}
 
 /** 创建 */
 export const createBarChart = (source: TBarSource, options?: IBarOptions): EChartsOption => {
-    const out: EChartsOption = {}
-    return out
+    return {}
 }

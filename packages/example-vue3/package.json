@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "default-passive-events": "^2.0.0",
         "prettier": "^2.7.1",
         "vue": "^3.2.37"
     },

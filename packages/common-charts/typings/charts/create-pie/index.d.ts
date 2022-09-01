@@ -1,18 +1,10 @@
 import { EChartsOption } from 'echarts';
-interface IParams {
-    /** 标题 */
-    title: string;
-    /** 数量单位 */
-    unit: string;
-    /** 数据源 */
-    source: Array<[string, number]>;
-    /** 布局/坐标 */
-    position: {
-        r: number;
-        x: number;
-        y: number;
-    };
+import { IBaseOptions, TArray } from '../intf';
+export declare type TPieSource = TArray | Array<{
+    name: string;
+    source: TArray;
+}>;
+export interface IPieOptions extends IBaseOptions {
 }
-/** 创建通用饼图 */
-export declare const createPieChart: (params: IParams) => EChartsOption;
-export {};
+/** 创建 */
+export declare const createPieChart: (source: TPieSource, options?: IPieOptions) => EChartsOption;

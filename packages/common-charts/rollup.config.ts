@@ -2,6 +2,7 @@ import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import { RollupOptions } from 'rollup'
 import pkg from './package.json'
+import { totalSize } from 'rollup-plugin-total-size'
 
 const banner: string = `
 /** ${pkg.name}
@@ -12,17 +13,19 @@ const banner: string = `
 
 /** export rollup.config */
 export default async (): Promise<RollupOptions | Array<RollupOptions>> => {
-    const outType: Array<'cjs' | 'es'> = ['cjs', 'es']
+    const outType: Array<'cjs' | 'es'> = ['cjs']
 
     return outType.map((format) => {
         return {
-            treeshake: false,
+            treeshake: true,
             strictDeprecations: false,
             input: 'lib/index.ts',
             plugins: [
                 typescript({ clean: true, useTsconfigDeclarationDir: true, abortOnError: true }),
                 // compress
-                terser()
+                terser(),
+                // total bundle size
+                totalSize()
             ],
             output: {
                 exports: 'auto',
