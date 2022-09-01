@@ -10,6 +10,7 @@
 
 > 适用于 vue 项目的 echarts 图表集合. (vue2.x, vue3.x echart 图表组件过渡方案)
 
+
 ## 安装
 
 -   install in vue2.7 or vue3.x

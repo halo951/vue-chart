@@ -4,7 +4,12 @@
 [![GitHub stars](https://img.shields.io/github/stars/halo951/common-charts.svg?style=social&label=common-charts)](https://github.com/halo951/common-charts)
 [![npm version](https://badge.fury.io/js/common-charts.svg)](https://badge.fury.io/js/common-charts)
 
-> 适用于 vue 项目的 echarts 图表集合
+> 重要提示: 这个库刚开发出来, 目前就 `<Chart>` 组件可用, 其他的通用的创建方法正在做, 可以等到 0.0.1 版本搞好以后在用.
+>
+> 现阶段, 可以先用 `<Chart />` 作为 echart 容器
+
+> 适用于 vue 项目的 echarts 图表集合. (vue2.x, vue3.x echart 图表组件过渡方案)
+
 
 ## 安装
 
