@@ -5,15 +5,26 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "cd packages/common-charts && yarn build",
-        "test": "cd packages/common-charts && yarn test",
-        "format": "prettier -w ./*.ts",
-        "serve:vue2": "cd packages/example-vue2 && yarn serve",
-        "serve:vue3": "cd packages/example-vue3 && yarn serve",
-        "release": "cd packages/common-charts && yarn publish"
+        "cp": "ts-node --project tsconfig.node.json scripts/create.ts",
+        "build": "ts-node --project tsconfig.node.json scripts/build.ts",
+        "release": "ts-node --project tsconfig.node.json scripts/release.ts",
+        "test": "jest --coverage",
+        "lint:fix": "prettier -w **.ts **.md **.json"
     },
     "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
+        "@types/jest": "^27.4.1",
+        "commander": "^9.4.0",
+        "fs-extra": "^10.1.0",
+        "glob": "^8.0.1",
+        "jest": "^27.5.1",
         "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.70.2",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-total-size": "^1.1.0",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "ts-jest": "^27.1.4",
         "typescript": "^4.8.2"
     }
 }

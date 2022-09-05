@@ -1,0 +1,48 @@
+{
+    "name": "@vue-chart/echart",
+    "description": "适用于 vue2.x, 3.x 的 echart 图表工具",
+    "keywords": [
+        "vue",
+        "echart",
+        "common-chart"
+    ],
+    "version": "0.1.0",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
+    "typings": "typings/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.cjs.js"
+        }
+    },
+    "sideEffects": false,
+    "author": {
+        "name": "halo951",
+        "url": "https://github.com/halo951"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/halo951/common-charts.git"
+    },
+    "bugs": {
+        "url": "https://github.com/halo951/common-charts/issues"
+    },
+    "homepage": "https://github.com/halo951/common-charts#readme",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rimraf dist/* && rimraf typings/*",
+        "build": "rollup --config ../../rollup.config.ts --configPlugin typescript2",
+        "lint:fix": "prettier -w **.ts **.md **.json",
+        "test": "jest --coverage"
+    },
+    "peerDependencies": {
+        "echarts": ">= 4.0.0",
+        "typescript": ">=4.0.0",
+        "vue": "^2.6.14 || >= 2.7.0 || >= 3.0.0"
+    },
+    "devDependencies": {
+        "echarts": "^5.3.3",
+        "vue": "^3.2.37"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "include": ["packages/*/lib/**.ts", "packages/*/__tests__/**.ts"],
+    "exclude": [],
+    "compilerOptions": {
+        "lib": ["esnext", "DOM"],
+        "types": ["node", "jest"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+
+        "sourceMap": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "importHelpers": true,
+
+        "strict": true,
+        "noImplicitReturns": false,
+        "allowSyntheticDefaultImports": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "declarationDir": "typings"
+    }
+}
