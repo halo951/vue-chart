@@ -1,8 +1,8 @@
 # @vue-chart/create-line
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-line.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-line.svg?style=social&label=@vue-chart/create-line)](https://github.com/halo951/@vue-chart/create-line)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-line.svg)](https://badge.fury.io/js/@vue-chart/create-line)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-line.svg)](https://www.npmjs.com/package/@vue-chart/create-line)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-line.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-line)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-line)
 
 ## About
 

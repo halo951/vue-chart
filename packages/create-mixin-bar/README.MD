@@ -1,8 +1,8 @@
 # @vue-chart/create-mixin-bar
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-mixin-bar.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-mixin-bar.svg?style=social&label=@vue-chart/create-mixin-bar)](https://github.com/halo951/@vue-chart/create-mixin-bar)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-mixin-bar.svg)](https://badge.fury.io/js/@vue-chart/create-mixin-bar)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-mixin-bar.svg)](https://www.npmjs.com/package/@vue-chart/create-mixin-bar)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-mixin-bar.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-mixin-bar)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-mixin-bar)
 
 ## About
 

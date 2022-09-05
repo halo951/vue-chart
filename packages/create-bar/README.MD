@@ -1,8 +1,8 @@
 # @vue-chart/create-bar
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-bar.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-bar.svg?style=social&label=@vue-chart/create-bar)](https://github.com/halo951/@vue-chart/create-bar)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-bar.svg)](https://badge.fury.io/js/@vue-chart/create-bar)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-bar.svg)](https://www.npmjs.com/package/@vue-chart/create-bar)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-bar.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-bar)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-bar)
 
 ## About
 

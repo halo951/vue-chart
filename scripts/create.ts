@@ -4,7 +4,6 @@ import np from 'path'
 
 const pkgPath = (name: string) => np.join(process.cwd(), 'packages', name)
 const isExist = (name: string) => fs.existsSync(pkgPath(name))
-const mkdir = (name: string) => fs.mkdirSync(pkgPath(name))
 
 const createPkg = (name: string, desc: string) => {
     const pkg = {
@@ -66,9 +65,9 @@ const createReadme = (name: string, desc: string) => {
     const readme: string = `
 # @vue-chart/${name}
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/${name}.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/${name}.svg?style=social&label=@vue-chart/${name})](https://github.com/halo951/@vue-chart/${name})
-[![npm version](https://badge.fury.io/js/@vue-chart/${name}.svg)](https://badge.fury.io/js/@vue-chart/${name})
+[![npm version](https://badge.fury.io/js/%40vue-chart%2F${name}.svg)](https://www.npmjs.com/package/@vue-chart/${name})
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2F${name}.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/${name})
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/${name})
 
 ## About
 
@@ -134,7 +133,7 @@ export default {
 
 `
     //  write
-    fs.outputFileSync(np.join(pkgPath(name), 'README.MD'), readme.trim(), { encoding: 'utf-8' })
+    fs.outputFileSync(np.join(pkgPath(name), 'README.md'), readme.trim(), { encoding: 'utf-8' })
 }
 
 /** 创建导出文件 */

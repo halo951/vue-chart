@@ -1,8 +1,8 @@
 # @vue-chart/create-process-serie
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-process-serie.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-process-serie.svg?style=social&label=@vue-chart/create-process-serie)](https://github.com/halo951/@vue-chart/create-process-serie)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-process-serie.svg)](https://badge.fury.io/js/@vue-chart/create-process-serie)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-process-serie.svg)](https://www.npmjs.com/package/@vue-chart/create-process-serie)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-process-serie.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-process-serie)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-process-serie)
 
 ## About
 

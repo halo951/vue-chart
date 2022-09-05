@@ -1,8 +1,8 @@
 # @vue-chart/create-hollow-serie
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-hollow-serie.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-hollow-serie.svg?style=social&label=@vue-chart/create-hollow-serie)](https://github.com/halo951/@vue-chart/create-hollow-serie)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-hollow-serie.svg)](https://badge.fury.io/js/@vue-chart/create-hollow-serie)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-hollow-serie.svg)](https://www.npmjs.com/package/@vue-chart/create-hollow-serie)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-hollow-serie.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-hollow-serie)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-hollow-serie)
 
 ## About
 

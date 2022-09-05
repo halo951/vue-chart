@@ -1,8 +1,8 @@
 # @vue-chart/echart
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/echart.svg)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fechart.svg)](https://www.npmjs.com/package/@vue-chart/echart)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fechart.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/echart)
 [![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart)
-[![npm version](https://badge.fury.io/js/@vue-chart/echart.svg)](https://badge.fury.io/js/@vue-chart/echart)
 
 ## About
 

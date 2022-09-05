@@ -1,8 +1,8 @@
 # @vue-chart/create-pie
 
-![npm](https://img.shields.io/npm/dw/@vue-chart/create-pie.svg)
-[![GitHub stars](https://img.shields.io/github/stars/halo951/@vue-chart/create-pie.svg?style=social&label=@vue-chart/create-pie)](https://github.com/halo951/@vue-chart/create-pie)
-[![npm version](https://badge.fury.io/js/@vue-chart/create-pie.svg)](https://badge.fury.io/js/@vue-chart/create-pie)
+[![npm version](https://badge.fury.io/js/%40vue-chart%2Fcreate-pie.svg)](https://www.npmjs.com/package/@vue-chart/create-pie)
+[![npm downloads](https://img.shields.io/npm/dm/%40vue-chart%2Fcreate-pie.svg?style=flat)](https://www.npmjs.com/package/@vue-chart/create-pie)
+[![GitHub stars](https://img.shields.io/github/stars/halo951/vue-chart?style=social&label=@vue-chart/echart)](https://github.com/halo951/vue-chart/tree/master/packages/create-pie)
 
 ## About
 
