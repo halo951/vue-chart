@@ -28,12 +28,12 @@ const createPkg = (name: string, desc: string) => {
         },
         repository: {
             type: 'git',
-            url: 'https://github.com/halo951/common-charts.git'
+            url: 'https://github.com/halo951/vue-chart.git'
         },
         bugs: {
-            url: 'https://github.com/halo951/common-charts/issues'
+            url: 'https://github.com/halo951/vue-chart/issues'
         },
-        homepage: 'https://github.com/halo951/common-charts#readme',
+        homepage: 'https://github.com/halo951/vue-chart#readme',
         license: 'MIT',
         scripts: {
             clean: 'rimraf dist/* && rimraf typings/*',
