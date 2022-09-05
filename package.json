@@ -1,8 +1,12 @@
 {
     "name": "workspace",
     "private": "true",
+    "engines": {
+        "node": "^14.18.0 || >=16.0.0"
+    },
     "workspaces": [
-        "packages/*"
+        "packages/*",
+        "playground"
     ],
     "scripts": {
         "cp": "ts-node --project tsconfig.node.json scripts/create.ts",

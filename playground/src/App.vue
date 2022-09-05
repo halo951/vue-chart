@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue'
 import { Chart, EChartsOption } from '@vue-chart/echart'
-import { createBar } from '@vue-chart/create-bar'
+import createBar from '@vue-chart/create-bar'
 
-const options: EChartsOption = createBar([])
-
-const chartOptions: Ref<EChartsOption> = ref(options)
+const options = {}
+const chartOptions = ref(options)
 </script>
 
 <template>
-    <Chart :options="chartOptions" />
+    <Chart :options="chartOptions" renderer="canvas" />
 </template>
 
 <style scoped>
