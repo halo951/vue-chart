@@ -1,0 +1,44 @@
+{
+    "name": "@vue-chart/create-pie",
+    "description": "创建饼状图",
+    "keywords": [
+        "echart",
+        "vue-chart"
+    ],
+    "version": "1.0.0",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
+    "typings": "typings/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.cjs.js"
+        }
+    },
+    "sideEffects": false,
+    "author": {
+        "name": "halo951",
+        "url": "https://github.com/halo951"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/halo951/vue-chart.git"
+    },
+    "bugs": {
+        "url": "https://github.com/halo951/vue-chart/issues"
+    },
+    "homepage": "https://github.com/halo951/vue-chart#readme",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rimraf dist/* && rimraf typings/*",
+        "build": "rollup --config rollup.config.ts --configPlugin typescript2",
+        "lint:fix": "prettier -w **.ts **.md **.json",
+        "test": "jest --coverage"
+    },
+    "peerDependencies": {
+        "echarts": ">= 4.0.0"
+    },
+    "devDependencies": {
+        "echarts": "^5.3.3"
+    }
+}
