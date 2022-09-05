@@ -5,7 +5,7 @@
         "vue",
         "echart"
     ],
-    "version": "0.0.1-dev.4",
+    "version": "0.0.1-dev.5",
     "main": "dist/index.cjs.js",
     "module": "dist/index.es.js",
     "typings": "typings/index.d.ts",
@@ -15,12 +15,6 @@
             "require": "./dist/index.cjs.js"
         }
     },
-    "files": [
-        "package.json",
-        "README.md",
-        "tsconfig.json",
-        "dist/"
-    ],
     "sideEffects": false,
     "author": {
         "name": "halo951",
