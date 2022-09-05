@@ -1,6 +1,6 @@
 {
     "name": "@vue-chart/create-bar",
-    "description": "创建饼状图",
+    "description": "创建柱状图",
     "keywords": [
         "echart",
         "vue-chart"
@@ -31,7 +31,7 @@
     "license": "MIT",
     "scripts": {
         "clean": "rimraf dist/* && rimraf typings/*",
-        "build": "rollup --config ../../rollup.config.ts --configPlugin typescript2",
+        "build": "rollup --config rollup.config.ts --configPlugin typescript2",
         "lint:fix": "prettier -w **.ts **.md **.json",
         "test": "jest --coverage"
     },

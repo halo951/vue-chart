@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import { RollupOptions } from 'rollup'
-import pkg from './packages/echart/package.json'
+import pkg from './package.json'
 import { totalSize } from 'rollup-plugin-total-size'
 
 const banner: string = `

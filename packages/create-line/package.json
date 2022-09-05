@@ -31,7 +31,7 @@
     "license": "MIT",
     "scripts": {
         "clean": "rimraf dist/* && rimraf typings/*",
-        "build": "rollup --config ../../rollup.config.ts --configPlugin typescript2",
+        "build": "rollup --config rollup.config.ts --configPlugin typescript2",
         "lint:fix": "prettier -w **.ts **.md **.json",
         "test": "jest --coverage"
     },

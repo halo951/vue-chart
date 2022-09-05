@@ -37,7 +37,7 @@ const createPkg = (name: string, desc: string) => {
         license: 'MIT',
         scripts: {
             clean: 'rimraf dist/* && rimraf typings/*',
-            build: 'rollup --config ../../rollup.config.ts --configPlugin typescript2',
+            build: 'rollup --config rollup.config.ts --configPlugin typescript2',
             'lint:fix': 'prettier -w **.ts **.md **.json',
             test: 'jest --coverage'
         },
@@ -174,6 +174,11 @@ program
         fs.copyFileSync(
             np.join(process.cwd(), 'packages/echart/tsconfig.json'),
             np.join(process.cwd(), `packages/${name}/tsconfig.json`)
+        )
+        // 复制 rollup.config.ts
+        fs.copyFileSync(
+            np.join(process.cwd(), 'packages/echart/rollup.config.ts'),
+            np.join(process.cwd(), `packages/${name}/rollup.config.ts`)
         )
         // 创建入口文件
         createIndex(name, desc)
