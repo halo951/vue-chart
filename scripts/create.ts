@@ -146,7 +146,7 @@ import { EChartsOption } from 'echarts'
  * 
  * @returns EChartsOption
  */
-export default ():EChartsOption => {
+export default (): EChartsOption => {
     // @define options
     const opt: EChartsOption = {}
 
