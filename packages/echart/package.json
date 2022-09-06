@@ -6,7 +6,7 @@
         "echart",
         "common-chart"
     ],
-    "version": "0.1.5",
+    "version": "0.1.6",
     "main": "dist/index.cjs.js",
     "module": "dist/index.es.js",
     "typings": "typings/index.d.ts",
@@ -28,7 +28,7 @@
     "bugs": {
         "url": "https://github.com/halo951/vue-chart/issues"
     },
-    "homepage": "https://github.com/halo951/vue-chart#readme",
+    "homepage": "https://www.npmjs.com/org/vue-chart",
     "license": "MIT",
     "scripts": {
         "clean": "rimraf dist/* && rimraf typings/*",
