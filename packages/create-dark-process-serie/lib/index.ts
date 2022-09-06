@@ -1,6 +1,5 @@
 import { EChartsOption, PolarComponentOption } from 'echarts'
 import { createSerie } from './create-serie'
-import { createTitle } from './create-title'
 import { createTooltip } from './create-tooltip'
 import { setAnimation } from './set-animation'
 import { setColor } from './set-color'
@@ -64,10 +63,9 @@ export default (options: IProcessSerieOptions): EChartsOption => {
     // > 设置 极坐标系中心点, 与 r(半径)
     chart.polar = { center: ['center', 'center'], radius: 100, ...options.polar }
 
-    // ? 如果指定了标题, 那么创建标题 和 tooltip (如需关闭, 手工执行 delete <prop> 即可)
+    // ? 如果指定了标题, 那么创建tooltip (如需关闭, 手工执行 delete <prop> 即可)
+    // ! 由于不好确定 标题 y轴定位, 所以干脆将标题渲染到 serie 内
     if (options.title) {
-        // @deprecated 设置标题 (废弃, 由于不好确定 标题 y轴定位, 所以干脆将标题渲染到 serie 内)
-        // chart.title = createTitle(options.title, chart.polar)
         // > 设置 hover 提示
         chart.tooltip = createTooltip()
     }

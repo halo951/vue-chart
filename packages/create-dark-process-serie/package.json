@@ -1,6 +1,6 @@
 {
-    "name": "@vue-chart/create-process-serie",
-    "description": "创建圆环进度图",
+    "name": "@vue-chart/create-dark-process-serie",
+    "description": "创建圆环进度图 (dark theme)",
     "keywords": [
         "echart",
         "vue-chart"
