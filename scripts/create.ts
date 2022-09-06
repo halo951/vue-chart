@@ -71,9 +71,11 @@ const createReadme = (name: string, desc: string) => {
 
 ## About
 
+> Tips: 建议使用 \`@vue-chart/echart\` 作为图表组件, 也可以搭配其他图表组件使用
+
 ${desc}
 
-> Tips: 建议使用 \`@vue-chart/echart\` 作为图表组件, 也可以搭配其他图表组件使用
+![example](./example.jpg)
 
 ## Install
 
