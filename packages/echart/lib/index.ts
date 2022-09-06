@@ -6,10 +6,10 @@ import { delay, qraf } from './utils'
  *
  * @description 修复组合式api Ref<Unwrap<T>> 解包 EChartsOptions `graphic` 类型冲突导致的类型推断不一致问题
  */
-export interface EChartsOptionProp extends EChartsOption {
+export interface OmitedEChartsOption extends EChartsOption {
     graphic?: any
-    options?: EChartsOptionProp[]
-    baseOption?: EChartsOptionProp
+    options?: OmitedEChartsOption[]
+    baseOption?: OmitedEChartsOption
 }
 
 interface IDefaultOptions {
@@ -78,7 +78,7 @@ export const Chart = defineComponent({
     props: {
         /** 创建echarts图表参数 */
         options: {
-            type: Object as PropType<EChartsOptionProp>,
+            type: Object as PropType<OmitedEChartsOption>,
             default: () => ({})
         },
         /** 首次渲染休眠时间
