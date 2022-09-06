@@ -1,6 +1,14 @@
 import { PropType } from 'vue';
 import { ECharts, EChartsOption } from 'echarts';
-export { EChartsOption } from 'echarts';
+/** 继承 EChartsOptions
+ *
+ * @description 修复组合式api Ref<Unwrap<T>> 解包 EChartsOptions `graphic` 类型冲突导致的类型推断不一致问题
+ */
+export interface EChartsOptionProp extends EChartsOption {
+    graphic?: any;
+    options?: EChartsOptionProp[];
+    baseOption?: EChartsOptionProp;
+}
 export interface IChartData {
     chart: ECharts | null;
     sleep: number;
@@ -24,7 +32,7 @@ export declare const setRenderer: (rendererType: 'canvas' | 'svg') => void;
 export declare const Chart: import("vue").DefineComponent<{
     /** 创建echarts图表参数 */
     options: {
-        type: PropType<EChartsOption>;
+        type: PropType<EChartsOptionProp>;
         default: () => {};
     };
     /** 首次渲染休眠时间
@@ -57,7 +65,7 @@ export declare const Chart: import("vue").DefineComponent<{
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     /** 创建echarts图表参数 */
     options: {
-        type: PropType<EChartsOption>;
+        type: PropType<EChartsOptionProp>;
         default: () => {};
     };
     /** 首次渲染休眠时间
@@ -86,7 +94,7 @@ export declare const Chart: import("vue").DefineComponent<{
         default: () => "canvas" | "svg";
     };
 }>>, {
-    options: EChartsOption;
+    options: EChartsOptionProp;
     firstRenderSleep: number;
     clear: boolean;
     renderer: "canvas" | "svg";

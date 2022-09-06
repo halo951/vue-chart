@@ -2,7 +2,15 @@ import { h, PropType, defineComponent, onMounted, onBeforeUnmount, ref, watch } 
 import { ECharts, EChartsOption, init } from 'echarts'
 import { delay, qraf } from './utils'
 
-export { EChartsOption } from 'echarts'
+/** 继承 EChartsOptions
+ *
+ * @description 修复组合式api Ref<Unwrap<T>> 解包 EChartsOptions `graphic` 类型冲突导致的类型推断不一致问题
+ */
+export interface EChartsOptionProp extends EChartsOption {
+    graphic?: any
+    options?: EChartsOptionProp[]
+    baseOption?: EChartsOptionProp
+}
 
 interface IDefaultOptions {
     /** 首次渲染休眠时间
@@ -70,7 +78,7 @@ export const Chart = defineComponent({
     props: {
         /** 创建echarts图表参数 */
         options: {
-            type: Object as PropType<EChartsOption>,
+            type: Object as PropType<EChartsOptionProp>,
             default: () => ({})
         },
         /** 首次渲染休眠时间

@@ -10,12 +10,22 @@
 
 ## 扩展
 
-> 常用 echart 图表创建方法 (Tips: 正在逐步开发, 带 todo 的是未完成的)
+> 整理了一些常用场景的图表创建模板 (Tips: 正在逐步开发, 带 todo 的是未完成的)
+
+### 默认
 
 -   [TODO 柱状图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 折线图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 饼图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 柱状图 & 折线图组合 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
+-   [TODO 折线图 - @vue-chart/create-line](https://www.npmjs.com/package/@vue-chart/create-line)
+-   [TODO 饼图 - @vue-chart/create-pie](https://www.npmjs.com/package/@vue-chart/create-pie)
+-   [TODO 柱状图 & 折线图组合 - @vue-chart/create-mixin-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
+-   [TODO 空心饼图 - @vue-chart/create-hollow-serie](https://www.npmjs.com/package/@vue-chart/create-bar)
+-   [TODO 圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-bar)
+
+### 暗黑主题
+
+-   [TODO 柱状图 (dark) - @vue-chart/create-dark-bar](https://www.npmjs.com/package/@vue-chart/create-dark-bar)
+-   [TODO 折线图 (dark) - @vue-chart/create-dark-line](https://www.npmjs.com/package/@vue-chart/create-dark-line)
+-   [TODO 饼图 (dark) - @vue-chart/create-dark-pie](https://www.npmjs.com/package/@vue-chart/create-dark-pie)
 
 ## 安装
 
@@ -94,3 +104,4 @@ export default {
 
 -   增强, 针对同一时刻大量更新的 echarts 图表, 增加了队列修改能力
 -   增强, 针对单一图表, 增加 `clear` 属性, 允许清除未完成动画, 并执行下次渲染
+-   修复, 使用 `ref` 映射 options 变量时, 由于`Ref<Unwrap<T>>` 类型冲突导致的类型推断不一致问题
