@@ -10,7 +10,7 @@
 
 创建圆环进度图 (dark theme)
 
-![example](./example.jpg)
+![example](https://github.com/halo951/vue-chart/blob/master/packages/create-dark-process-serie/example.jpg)
 
 ## Install
 

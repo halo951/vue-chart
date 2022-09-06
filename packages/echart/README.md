@@ -14,15 +14,16 @@
 
 ### 默认
 
+-   [圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-process-serie)
 -   [TODO 柱状图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
 -   [TODO 折线图 - @vue-chart/create-line](https://www.npmjs.com/package/@vue-chart/create-line)
 -   [TODO 饼图 - @vue-chart/create-pie](https://www.npmjs.com/package/@vue-chart/create-pie)
 -   [TODO 柱状图 & 折线图组合 - @vue-chart/create-mixin-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
 -   [TODO 空心饼图 - @vue-chart/create-hollow-serie](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-bar)
 
 ### 暗黑主题
 
+-   [圆环进度图 (dark) - @vue-chart/create-dark-process-serie](https://www.npmjs.com/package/@vue-chart/create-dark-process-serie)
 -   [TODO 柱状图 (dark) - @vue-chart/create-dark-bar](https://www.npmjs.com/package/@vue-chart/create-dark-bar)
 -   [TODO 折线图 (dark) - @vue-chart/create-dark-line](https://www.npmjs.com/package/@vue-chart/create-dark-line)
 -   [TODO 饼图 (dark) - @vue-chart/create-dark-pie](https://www.npmjs.com/package/@vue-chart/create-dark-pie)

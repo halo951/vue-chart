@@ -24,6 +24,7 @@
     - **echarts 版本** 一般建议最新的 5.x 版本, 如果有特殊需求(如: 需要 4.x), 则应在`peerDependencies`中, 指定需要的 echart 版本
     - **package name** 包名命名方式上, 一般建议 `create-<图表类型>`, 应遵循`小写加 - `方式命名
     - **导出文件** 使用 `yarn cp` 会默认创建一个 `index.ts`, 如需修改, 应保证导出文件格式与 `README.md` 使用方式一致.
+    - **记得截图** 使用截图工具, 截一个效果图(命名: example.jpg), 存放到新增包的根目录下, 并推送到 github.
 
 ## Scripts
 

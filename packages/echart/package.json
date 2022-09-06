@@ -6,7 +6,7 @@
         "echart",
         "common-chart"
     ],
-    "version": "0.1.4",
+    "version": "0.1.5",
     "main": "dist/index.cjs.js",
     "module": "dist/index.es.js",
     "typings": "typings/index.d.ts",

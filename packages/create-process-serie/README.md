@@ -10,7 +10,7 @@
 
 创建圆环进度图 (custom serie)
 
-![example](./example.jpg)
+![example](https://github.com/halo951/vue-chart/blob/master/packages/create-process-serie/example.jpg)
 
 ## Install
 

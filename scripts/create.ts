@@ -75,7 +75,7 @@ const createReadme = (name: string, desc: string) => {
 
 ${desc}
 
-![example](./example.jpg)
+![example](https://github.com/halo951/vue-chart/blob/master/packages/${name}/example.jpg)
 
 ## Install
 
