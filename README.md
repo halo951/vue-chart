@@ -12,6 +12,16 @@
 
 -   [使用 <Chart /> 组件](packages/echart/README.md)
 
+## 可用图表模板
+
+### 默认
+
+-   [圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-process-serie)
+
+### 暗黑主题
+
+-   [圆环进度图 (dark) - @vue-chart/create-dark-process-serie](https://www.npmjs.com/package/@vue-chart/create-dark-process-serie)
+
 ## 贡献指南
 
 ### 增加新的图表模板
