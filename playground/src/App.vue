@@ -42,8 +42,10 @@ body {
 }
 
 .chart {
-    width: 500px;
-    height: 400px;
-    border: 1px solid red;
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 2px 2px 4px 4px #ccc;
 }
 </style>
