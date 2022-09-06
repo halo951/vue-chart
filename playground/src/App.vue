@@ -1,17 +1,28 @@
 <script setup lang="ts">
-import { ref, Ref } from 'vue'
-import { Chart, EChartsOption } from '@vue-chart/echart'
-import createBar from '@vue-chart/create-bar'
+import { Chart } from '@vue-chart/echart'
+import createProcessSerie from '@vue-chart/create-process-serie'
 
-const options = {}
-const chartOptions = ref(options)
+const options = createProcessSerie({
+    val: 40,
+    max: 100,
+    title: '进度条'
+})
+
+// const options = create([
+//     ['09.01', 1],
+//     ['09.02', 21],
+//     ['09.03', 41],
+//     ['09.04', 31],
+//     ['09.05', 61],
+//     ['09.06', 11]
+// ])
 </script>
 
 <template>
-    <Chart :options="chartOptions" renderer="canvas" />
+    <Chart :options="options" />
 </template>
 
-<style scoped>
+<style>
 html,
 body {
     margin: 0;
@@ -20,10 +31,19 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    /* background: #000; */
 }
-#app,
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 .chart {
     width: 500px;
     height: 400px;
+    border: 1px solid red;
 }
 </style>
