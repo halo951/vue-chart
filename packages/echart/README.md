@@ -14,6 +14,8 @@
 
 ### 默认
 
+> Tip:
+> - 饼图考虑定位以及图例因素, 仅贡参考, 实际使用, 需要
 -   [圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-process-serie)
 -   [TODO 柱状图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
 -   [TODO 折线图 - @vue-chart/create-line](https://www.npmjs.com/package/@vue-chart/create-line)
