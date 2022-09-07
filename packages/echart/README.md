@@ -14,21 +14,14 @@
 
 ### 默认
 
-> Tip:
-> - 饼图考虑定位以及图例因素, 仅贡参考, 实际使用, 需要
--   [圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-process-serie)
--   [TODO 柱状图 - @vue-chart/create-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 折线图 - @vue-chart/create-line](https://www.npmjs.com/package/@vue-chart/create-line)
--   [TODO 饼图 - @vue-chart/create-pie](https://www.npmjs.com/package/@vue-chart/create-pie)
--   [TODO 柱状图 & 折线图组合 - @vue-chart/create-mixin-bar](https://www.npmjs.com/package/@vue-chart/create-bar)
--   [TODO 空心饼图 - @vue-chart/create-hollow-serie](https://www.npmjs.com/package/@vue-chart/create-bar)
+> Tip: 原本计划将常用的柱状图, 饼图这些都去做一个预设方法. 方便使用. 但是, 目前遇到一个问题, 就是不同的使用场景, 图表的表示不同, 越基础
+> 的图表, 想通过简单的模板创建处理起来越复杂, 导致最终使用效果甚至比原生的还要麻烦.
+> 这里, 我留一个 [issue](https://github.com/halo951/vue-chart/issues/1), 感兴趣的朋友可以进来讨论下, 图表开发搞哪些预设合适.
 
+-   [圆环进度图 - @vue-chart/create-process-serie](https://www.npmjs.com/package/@vue-chart/create-process-serie)
 ### 暗黑主题
 
 -   [圆环进度图 (dark) - @vue-chart/create-dark-process-serie](https://www.npmjs.com/package/@vue-chart/create-dark-process-serie)
--   [TODO 柱状图 (dark) - @vue-chart/create-dark-bar](https://www.npmjs.com/package/@vue-chart/create-dark-bar)
--   [TODO 折线图 (dark) - @vue-chart/create-dark-line](https://www.npmjs.com/package/@vue-chart/create-dark-line)
--   [TODO 饼图 (dark) - @vue-chart/create-dark-pie](https://www.npmjs.com/package/@vue-chart/create-dark-pie)
 
 ## 安装
 
