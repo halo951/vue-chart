@@ -30,7 +30,12 @@ import { ref } from 'vue'
 import createDarkProcessSerie from '@vue-chart/create-dark-process-serie'
 import type { EChartsOption } from '@vue-chart/echart' // or from 'echart'
 
-const options: EChartsOption = createDarkProcessSerie(/* data source */)
+const options: EChartsOption = createDarkProcessSerie({
+    /* data source */
+    val: 0,
+    max: 100,
+    title: '图表标题'
+})
 
 const chartOptions: Ref<EChartsOption> = ref(options)
 </script>

@@ -46,7 +46,12 @@ import type { EChartsOption } from '@vue-chart/echart' // or from 'echart'
 
 @Component({})
 export default class extends Vue {
-    options: EChartsOption = createProcessSerie(/* data source */)
+    options: EChartsOption = createProcessSerie({
+        /* data source */
+        val: 0,
+        max: 100,
+        title: '图表标题'
+    })
 }
 </script>
 ```
