@@ -6,9 +6,11 @@
 
 ## About
 
+> Tips: 建议使用 `@vue-chart/echart` 作为图表组件, 也可以搭配其他图表组件使用
+
 创建饼状图
 
-> Tips: 建议使用 `@vue-chart/echart` 作为图表组件, 也可以搭配其他图表组件使用
+![example](https://github.com/halo951/vue-chart/blob/master/packages/create-pie/example.jpg)
 
 ## Install
 
@@ -20,7 +22,7 @@ yarn add @vue-chart/create-pie
 
 ## usage
 
-- use in composition api
+-   use in composition api
 
 ```vue
 <script lang="ts" setup>
@@ -34,7 +36,7 @@ const chartOptions: Ref<EChartsOption> = ref(options)
 </script>
 ```
 
-- use in class api
+-   use in class api
 
 ```vue
 <script lang="ts" setup>
@@ -42,14 +44,14 @@ import { Component, Vue } from 'vue-property-decorator'
 import createPie from '@vue-chart/create-pie'
 import type { EChartsOption } from '@vue-chart/echart' // or from 'echart'
 
-@Component({ })
+@Component({})
 export default class extends Vue {
     options: EChartsOption = createPie(/* data source */)
 }
 </script>
 ```
 
-- use in js
+-   use in js
 
 ```vue
 <script lang="ts" setup>

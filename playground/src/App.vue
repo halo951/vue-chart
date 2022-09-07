@@ -1,25 +1,24 @@
 <script setup lang="ts">
 import { Chart } from '@vue-chart/echart'
-import createProcessSerie from '@vue-chart/create-process-serie'
+import { ref, onMounted } from 'vue'
+import createPie from './create'
+import { createTimelineLine } from './create-timeline-serie'
 
-const options = createProcessSerie({
-    val: 40,
-    max: 100,
-    title: '进度条'
+const options = createTimelineLine({
+    title: 'aeaewf',
+    subtitle: { name: '副标题', value: 10 },
+    source: [
+        ['09.01', 1],
+        ['09.02', 10],
+        ['09.03', 230],
+        ['09.04', 123],
+        ['09.05', 155]
+    ]
 })
-
-// const options = create([
-//     ['09.01', 1],
-//     ['09.02', 21],
-//     ['09.03', 41],
-//     ['09.04', 31],
-//     ['09.05', 61],
-//     ['09.06', 11]
-// ])
 </script>
 
 <template>
-    <Chart :options="options" />
+    <Chart :options="options" ref="chart" />
 </template>
 
 <style>
